@@ -5,9 +5,7 @@ function ProjectList({ projects }) {
   console.log(projects);
   const eachProject = projects.map((project) => {
     return (
-      <li key={project.id}>
-        <ProjectItem name={project.name} about={project.about} technologies={project.technologies} />
-      </li>
+        <ProjectItem key={project.id} name={project.name} about={project.about} technologies={project.technologies} />
     )
 }) 
   console.log(eachProject)
